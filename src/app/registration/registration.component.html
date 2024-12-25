@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h1>Register Here..</h1>
+            <form action="" [formGroup]="registrationForm" (ngSubmit)="register()">
+                <div class="form-group" >
+                    <label for="" class="form-label">username</label>
+                    <input type="text" class="form-control" name="uname" formControlName="username">
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label">password</label>
+                    <input type="text" class="form-control" name="pwd" formControlName="password">
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label">Email</label>
+                    <input type="text" class="form-control" name="Email" formControlName="password">
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label">Phone</label>
+                    <input type="text" class="form-control" name="phn" formControlName="phone">
+                </div>
+                <div class="form-group">
+                    <label for="" class="form-label">Role</label>
+                    <input type="text" class="form-control" name="role" formControlName="role">
+                </div>
+                <button class="btn btn-success mt-2" type="submit">Register</button>
+                <br>
+                <a routerLink="" style="text-decoration: none;">Don't have an account</a> 
+            </form>
+        </div>
+    </div>
+</div>
